@@ -1,0 +1,28 @@
+
+
+<div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+
+<script type="module">
+    import Chart from 'chart.js/auto';
+    import { data } from './Scripts/acquisitions.js';
+
+
+    const canvas = document.getElementById('acquisitions');
+    if (canvas instanceof HTMLCanvasElement) {
+        new Chart(canvas, {
+            type: 'bar',
+            data: {
+                labels: data.map(row => row.year),
+                datasets: [
+                    {
+                        label: 'Acquisitions by year',
+                        data: data.map(row => row.count)
+                    }
+                ]
+            }
+        });
+    } else {
+        console.error("Canvas element with id 'acquisitions' not found.");
+    }
+</script>
+

@@ -1,0 +1,28 @@
+{
+  "name": "Assignment2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel views/content/statistics.html",
+    "build": "parcel build views/content/statistics.html"
+  },
+  "devDependencies": {
+    "@types/fs-readfile-promise": "^3.0.4",
+    "@types/jquery": "^3.5.29",
+    "@types/mime-types": "^2.1.4",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.0",
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
+    "@types/googlemaps": "^3.43.3",
+    "@types/node": "^20.11.25",
+    "bootstrap": "^5.3.2",
+    "chart.js": "^4.0.0-release",
+    "fs-readfile-promise": "^3.0.1",
+    "jquery": "^3.7.1",
+    "mime-types": "^2.1.35"
+  }
+}
